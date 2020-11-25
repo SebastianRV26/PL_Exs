@@ -1,0 +1,35 @@
+% PREGUNTA 1
+% Asuma que la relación padre (como fue vista en clases) con los hechos
+% que definen las relaciones de
+% parentesco para las diferentes personas: maria, juan, pedro, etc.
+% a) Conteste que responde Prolog a:
+% ?- padre(pedro, X).
+% X = raul;
+% X = alfonso;
+% X = cande.
+%
+% ?- padre (X, pedro).
+% X = pepe.
+%
+% ?- madre(maria, X), padre(X, luis).
+% false.
+%
+% ?- padre(angel, X), padre(X, ana).
+% X = juan.
+%
+% En cada caso analice cómo Prolog resuelve la consulta tratando de
+% satisfacer la verdad de cláusulas y hechos.
+
+
+
+% b) ¿Cómo formularía las siguientes preguntas?
+% ¿Quién es el padre de paty?
+% R/ padre(X, paty).
+%
+% ¿Tiene pedro algún hijo?
+% R/ padre(pedro, Y).
+%
+% ¿Quiénes son los abuelos de raul?
+% R/ abuelo(X, raul).
+%  abuela(Y, raul).
+%
